@@ -78,7 +78,7 @@ class BERTDataset_test(Dataset):
 
 
 pred_model = BERTClassifier(bertmodel, dr_rate=0.5).to(device)
-pred_model.load_state_dict(torch.load('/home/mglee/VSCODE/git_folder/ISDS/TCBERT/model/ourA_e10_0327.pt'))  # state_dict를 불러 온 후, 모델에 저장
+pred_model.load_state_dict(torch.load('./ourA_e10_0327.pt'))  # state_dict를 불러 온 후, 모델에 저장
 
 def main(body):
     dataset = pd.DataFrame(body)
